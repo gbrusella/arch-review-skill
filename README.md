@@ -92,7 +92,7 @@ CHANGELOG.md                  version history, newest first
 
 ## Versions
 
-Releases are tagged (`v2.6.1` is the current one). `CHANGELOG.md` lists what changed in each. The version is repeated in `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json`, `.cursor-plugin/plugin.json` and `gemini-extension.json`; update all four when you cut a release.
+Releases are tagged (`v2.6.2` is the current one). `CHANGELOG.md` lists what changed in each. The version is repeated in `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json`, `.cursor-plugin/plugin.json` and `gemini-extension.json`; update all four when you cut a release.
 
 ## Limits
 
@@ -100,3 +100,7 @@ Releases are tagged (`v2.6.1` is the current one). `CHANGELOG.md` lists what cha
 - It cannot see live cloud state, repository settings (branch protection, environment reviewers) or external trackers, and it says so in the report instead of guessing.
 - It is not a threat assessment, a compliance determination or a certification.
 - It has been tried on a handful of small synthetic projects (Node with Terraform, Bicep and CloudFormation) and one real .NET and Bicep repository, with one run per version. Expect rough edges on stacks it has not seen.
+
+## Contributing and license
+
+Changes go through pull requests (see `CONTRIBUTING.md`); direct pushes to `main` are not accepted. Security issues: see `SECURITY.md`. Released under the MIT License (see `LICENSE`).

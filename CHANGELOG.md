@@ -2,6 +2,10 @@
 
 Newest first.
 
+## 2.6.2
+
+- Open source readiness, no change to the skill's behaviour: MIT license, security policy, contributing guide and pull request template; `license` set in the plugin manifests.
+
 ## 2.6.1
 
 - Packaging only, no change to the skill's behaviour: the skill moved to `skills/arch-review/`, and the repository is now a plugin and marketplace for Claude Code and Copilot CLI (`.claude-plugin/`), Cursor (`.cursor-plugin/`) and Gemini CLI (`gemini-extension.json`).

@@ -1,8 +1,16 @@
 {
   "name": "arch-review",
   "description": "Reviews the architecture of a medium-small application from its code and documentation: performance, resilience, maintainability, security, deployment strategy and cloud framework alignment. Read-only; reports findings with evidence status, severity, likelihood and confidence.",
-  "version": "2.6.1",
+  "version": "2.6.2",
+  "license": "MIT",
   "homepage": "https://github.com/gbrusella/arch-review-skill",
   "repository": "https://github.com/gbrusella/arch-review-skill",
-  "keywords": ["architecture", "review", "adr", "security", "resilience", "well-architected"]
+  "keywords": [
+    "architecture",
+    "review",
+    "adr",
+    "security",
+    "resilience",
+    "well-architected"
+  ]
 }
