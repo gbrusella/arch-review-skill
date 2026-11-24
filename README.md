@@ -103,4 +103,4 @@ Releases are tagged (`v2.6.3` is the current one). `CHANGELOG.md` lists what cha
 
 ## Contributing and license
 
-Changes go through pull requests (see `CONTRIBUTING.md`); direct pushes to `main` are not accepted. Security issues: see `SECURITY.md`. Released under the MIT License (see `LICENSE`).
+Changes go through pull requests (see `CONTRIBUTING.md`); direct pushes to `main` are not accepted. Be kind: see `CODE_OF_CONDUCT.md`. Security issues: see `SECURITY.md`. Released under the MIT License (see `LICENSE`).
