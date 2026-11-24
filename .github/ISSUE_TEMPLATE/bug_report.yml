@@ -1,0 +1,31 @@
+name: Bug report
+description: The skill gave a wrong, misleading or unusable result, or the packaging does not install.
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Skill version
+      description: The version from CHANGELOG.md or the release tag you installed.
+      placeholder: "2.6.3"
+    validations:
+      required: true
+  - type: dropdown
+    id: tool
+    attributes:
+      label: Tool
+      options: [Claude Code, GitHub Copilot CLI, Cursor, Gemini CLI, Antigravity, Other]
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you asked for, what the review did, and what you expected instead. Do not paste secrets or private code.
+    validations:
+      required: true
+  - type: textarea
+    id: project
+    attributes:
+      label: About the reviewed project
+      description: Language, size and whether it has ADRs or infrastructure files. A small generic example is best.

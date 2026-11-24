@@ -1,0 +1,21 @@
+name: Skill improvement
+description: Suggest a new check, a clearer rule, or support for another stack or tool.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What should change
+      description: Describe the check or rule and the situation where it would have helped.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: A generic example project or finding that shows the gap. Do not include private names, secrets or personal data.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [Checklists, Output format, Severity and evidence rules, Cloud alignment, Packaging for a tool, Other]
