@@ -1,0 +1,14 @@
+{
+  "name": "arch-review-skill",
+  "owner": { "name": "gbrusella" },
+  "metadata": { "description": "Architecture review skill for medium-small applications." },
+  "plugins": [
+    {
+      "name": "arch-review",
+      "source": "./",
+      "description": "Reviews the architecture of a medium-small application from its code and documentation: performance, resilience, maintainability, security, deployment strategy and cloud framework alignment. Read-only; reports findings with evidence status, severity, likelihood and confidence.",
+      "version": "2.6.1",
+      "category": "development"
+    }
+  ]
+}

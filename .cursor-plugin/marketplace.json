@@ -1,0 +1,11 @@
+{
+  "name": "arch-review-skill",
+  "owner": { "name": "gbrusella" },
+  "plugins": [
+    {
+      "name": "arch-review",
+      "source": "./",
+      "description": "Architecture review skill for medium-small applications."
+    }
+  ]
+}

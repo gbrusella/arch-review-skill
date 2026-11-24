@@ -2,6 +2,10 @@
 
 Newest first.
 
+## 2.6.1
+
+- Packaging only, no change to the skill's behaviour: the skill moved to `skills/arch-review/`, and the repository is now a plugin and marketplace for Claude Code and Copilot CLI (`.claude-plugin/`), Cursor (`.cursor-plugin/`) and Gemini CLI (`gemini-extension.json`).
+
 ## 2.6
 
 - Credential severity rule (confirmed versus unconfirmed, config versus committed), merge/split tie-breaker, Compact plan cap raised to about 10 rows, validity check before the Findings table, minimum evidence for Full, detail paragraphs for `high` only in Full, thin sections 4/7/9 collapse, rename-aware churn, checklist skip rule.

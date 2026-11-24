@@ -39,11 +39,31 @@ Missing information is never treated as a pass. If a documented or expected requ
 
 ## Install
 
-Copy this folder into a skills directory so that `SKILL.md` sits at the top of it, for example:
+The repository is a plugin and a marketplace, and the skill itself follows the open Agent Skills format (`skills/arch-review/SKILL.md`). The repository is private, so installs need access to it.
+
+**Claude Code**
 
 ```
-~/.claude/skills/arch-review/
+/plugin marketplace add gbrusella/arch-review-skill
+/plugin install arch-review@arch-review-skill
 ```
+
+**GitHub Copilot CLI**
+
+```
+copilot plugin marketplace add gbrusella/arch-review-skill
+copilot plugin install arch-review@arch-review-skill
+```
+
+**Gemini CLI**
+
+```
+gemini extensions install https://github.com/gbrusella/arch-review-skill
+```
+
+**Cursor:** add the repository as a plugin source from the Customize sidebar (the repository has a `.cursor-plugin/` manifest).
+
+**Antigravity and any other tool that reads Agent Skills:** copy `skills/arch-review/` into that tool's skills folder, for example `.agents/skills/arch-review/` in a workspace. Claude Code reads `~/.claude/skills/` and Copilot reads `~/.copilot/skills/` the same way.
 
 Then ask for a review in plain language:
 
@@ -56,19 +76,23 @@ Then ask for a review in plain language:
 ## Layout
 
 ```
-SKILL.md                      the skill: process, vocabulary, output formats
+skills/arch-review/           the skill itself (portable, one copy)
+  SKILL.md                    process, vocabulary, output formats
+  references/
+    checklists/               one checklist per topic, with an index in README.md
+    subagents.md              optional parallel specialists for large repositories
+    delta-review.md           reviewing a pull request or diff
+    findings-schema.md        optional machine-readable findings file
+    frameworks.md             pillar lists and category mapping for cloud frameworks
+.claude-plugin/               Claude Code plugin and marketplace manifests (Copilot CLI also reads the marketplace)
+.cursor-plugin/               Cursor plugin and marketplace manifests
+gemini-extension.json         Gemini CLI extension manifest
 CHANGELOG.md                  version history, newest first
-references/
-  checklists/                 one checklist per topic, with an index in README.md
-  subagents.md                optional parallel specialists for large repositories
-  delta-review.md             reviewing a pull request or diff
-  findings-schema.md          optional machine-readable findings file
-  frameworks.md               pillar lists and category mapping for cloud frameworks
 ```
 
 ## Versions
 
-Releases are tagged (`v2.6` is the current one). `CHANGELOG.md` lists what changed in each.
+Releases are tagged (`v2.6.1` is the current one). `CHANGELOG.md` lists what changed in each. The version is repeated in `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json`, `.cursor-plugin/plugin.json` and `gemini-extension.json`; update all four when you cut a release.
 
 ## Limits
 

@@ -1,0 +1,5 @@
+{
+  "name": "arch-review",
+  "version": "2.6.1",
+  "description": "Reviews the architecture of a medium-small application from its code and documentation: performance, resilience, maintainability, security, deployment strategy and cloud framework alignment. Read-only; reports findings with evidence status, severity, likelihood and confidence."
+}
