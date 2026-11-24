@@ -2,6 +2,10 @@
 
 Newest first.
 
+## 2.6.3
+
+- Repository tooling, no change to the skill's behaviour: `scripts/validate.py` and a `validate` workflow check every pull request (valid manifests, one consistent version matching the changelog, portable `SKILL.md` frontmatter, referenced files present, checklist index complete).
+
 ## 2.6.2
 
 - Open source readiness, no change to the skill's behaviour: MIT license, security policy, contributing guide and pull request template; `license` set in the plugin manifests.

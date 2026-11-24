@@ -21,7 +21,7 @@ If your change alters the skill or its packaging, add an entry to `CHANGELOG.md`
 
 ## Checks before opening a pull request
 
-- Every JSON manifest is valid.
+- `python3 scripts/validate.py` passes. It checks the manifests, the version, the `SKILL.md` frontmatter and the referenced files, and the same check runs on every pull request.
 - If you have Claude Code, `claude plugin validate .` passes.
 
 ## License
