@@ -6,7 +6,7 @@ Contributions are welcome. All changes go through pull requests; direct pushes t
 
 1. Fork the repository (or create a branch if you have access) and make your change.
 2. Open a pull request against `main` and fill in the template.
-3. A maintainer will review it. Squash merge is used.
+3. The repository owner (see `.github/CODEOWNERS`) must approve every pull request, and the `validate` check must pass. Squash merge is used.
 
 ## Guidelines for changes to the skill
 
