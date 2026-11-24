@@ -92,7 +92,7 @@ CHANGELOG.md                  version history, newest first
 
 ## Versions
 
-Releases are tagged (`v2.6.2` is the current one). `CHANGELOG.md` lists what changed in each. The version is repeated in `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json`, `.cursor-plugin/plugin.json` and `gemini-extension.json`; update all four when you cut a release.
+Releases are tagged (`v2.6.3` is the current one). `CHANGELOG.md` lists what changed in each. The version is repeated in `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json`, `.cursor-plugin/plugin.json` and `gemini-extension.json`; update all four when you cut a release.
 
 ## Limits
 
